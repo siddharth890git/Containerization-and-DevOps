@@ -350,5 +350,50 @@ docker run -d -p 5000:5000 username/my-flask-app:latest
 
 ---
 
+Common Workflow Summary
 
+Development Workflow
+
+
+# 1. Create Dockerfile and .dockerignore
+```bash
+# 2. Build image
+docker build -t myapp .
+
+# 3. Test locally
+docker run -p 8080:8080 myapp
+
+# 4. Tag for production
+docker tag myapp:latest myapp:v1.0
+
+# 5. Push to registry
+docker push myapp:v1.0
+Production Workflow
+
+# 1. Pull from registry
+docker pull myapp:v1.0
+
+# 2. Run in production
+docker run -d -p 80:8080 --name prod-app myapp:v1.0
+
+# 3. Monitor
+docker logs -f prod-app
+```
+
+#### Key Takeaways
+
+- Dockerfile defines how to build an image.
+- .dockerignore excludes unnecessary files.
+- Tagging helps version control images.
+- Multi-stage builds create smaller images.
+- Docker Hub allows sharing images.
+- Always test locally before publishing.
+
+#### Cleanup
+```bash
+Code :
+docker container prune
+docker image prune
+docker system prune -a
+```
 
