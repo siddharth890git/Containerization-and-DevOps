@@ -14,3 +14,7 @@
     
 ## THEORY
 
+## Repository Information
+
+Repository URL: https://github.com/siddharth890git/Containerization-and-DevOps/tree/main
+Hosted URL: https://siddharth890git.github.io/Containerization-and-DevOps/
