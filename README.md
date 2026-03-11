@@ -13,7 +13,11 @@
 - [Experiment 5: Docker – Volumes, Environment Variables, Monitoring & Networks](./LAB/lab5/README.md)
     
 ## THEORY
-
+- [Docker Volume](./theory/volume.md)
+- [Docker Networking](./theory/network.md)
+- [Docker Compose](./theory/Compose.md)
+- [Docker Swarm](./theory/swarm.md)
+  
 ## Repository Information
 
 - Repository URL: https://github.com/siddharth890git/Containerization-and-DevOps/tree/main
