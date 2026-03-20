@@ -24,4 +24,4 @@
 - Hosted URL: https://siddharth890git.github.io/Containerization-and-DevOps/
 
 ## Assignment
--[Assignment_1](./assignment-containerized-webapp/README.md)
+- [Assignment_1](./assignment-containerized-webapp/README.md)
