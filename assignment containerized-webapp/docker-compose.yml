@@ -1,0 +1,57 @@
+services:
+
+  backend:
+    build: ./backend
+    container_name: studentapi
+    restart: always
+
+    environment:
+      DB_HOST: 172.21.0.101
+      DB_USER: admin
+      DB_PASS: admin123
+      DB_NAME: studentdb
+      DB_PORT: 5432
+
+    networks:
+      student_macvlan:
+        ipv4_address: 172.21.0.100
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+
+  db:
+    build: ./database
+    container_name: studentdb
+    restart: always
+
+    environment:
+      POSTGRES_DB: studentdb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+
+    volumes:
+      - student_pgdata:/var/lib/postgresql/data
+
+    networks:
+      student_macvlan:
+        ipv4_address: 172.21.0.101
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d studentdb"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  student_pgdata:
+
+networks:
+  student_macvlan:
+    external: true
