@@ -17,7 +17,7 @@
 - [Docker Networking](./Theory/network.md)
 - [Docker Compose](./Theory/Compose.md)
 - [Docker Swarm](./Theory/swarm.md)
-- [Docker Swarm](./Theory/cloudclass/Apache-webserver.md)
+- [Docker Apache-webserver](./Theory/cloudclass/Apache-webserver.md)
 ## Repository Information
 
 - Repository URL: https://github.com/siddharth890git/Containerization-and-DevOps/tree/main
