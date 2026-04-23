@@ -6,7 +6,7 @@
 
 ---
 ### GitHub repository link
-[![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-black?logo=github&style=for-the-badge)](https://github.com/Pavilioni5/my-app)
+[![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-black?logo=github&style=for-the-badge)](https://github.com/siddharth890git/my-app)
 
 
 ## Theory
