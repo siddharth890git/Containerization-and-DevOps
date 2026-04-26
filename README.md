@@ -14,7 +14,7 @@
 - [Experiment 6:Docker Compose DockerRun,and MultiContainer Application Wordpress MySQL](./LAB/lab6/README.md)
 - [Experiment 7: CI/CD Pipeline using Jenkins, GitHub & Docker Hub](./LAB/lab7/README.md)
 - [Experiment 9: Ansible — Automated Server Configuration Management](./LAB/lab9/README.md)
-- [Experiment 11: Orchestration using Docker Compose & Docker Swarm (Continuation of Experiment 6)](./LAB/lab10/README.md)
+- [Experiment 11: Orchestration using Docker Compose & Docker Swarm (Continuation of Experiment 6)](./LAB/lab11/README.md)
 
     
 ## THEORY
