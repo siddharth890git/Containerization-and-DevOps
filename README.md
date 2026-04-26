@@ -13,6 +13,7 @@
 - [Experiment 5: Docker – Volumes, Environment Variables, Monitoring & Networks](./LAB/lab5/README.md)
 - [Experiment 6:Docker Compose DockerRun,and MultiContainer Application Wordpress MySQL](./LAB/lab6/README.md)
 - [Experiment 7: CI/CD Pipeline using Jenkins, GitHub & Docker Hub](./LAB/lab7/README.md)
+- [Experiment 9: Ansible — Automated Server Configuration Management](./LAB/lab9/README.md)
 
     
 ## THEORY
